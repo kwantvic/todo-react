@@ -1,7 +1,8 @@
-import React from 'react';
-import listSvg from './assets/img/list.svg';
+import React, { useState } from 'react';
 import List from './components/List/index';
+import AddButtonList from './components/AddButtonList';
 
+import listSvg from './assets/img/list.svg';
 
 function App() {
   return <div className="todo">
@@ -10,7 +11,6 @@ function App() {
         {
           icon: <img src={listSvg} alt="List icon" />,
           name: "Все задачи",
-          active: true
         }
       ]} />
       <List items={[
@@ -20,16 +20,19 @@ function App() {
         },
         {
           color: 'blue',
-          name: "Фронтенд"
+          name: "Фронтенд",
+          active: true
         },
         {
           color: 'pink',
           name: "Фильмы и сериалы"
         },
-      ]} />
+      ]}
+        isRemovable
+      />
+      <AddButtonList />
     </div>
     <div className="todo__tasks">
-
     </div>
   </div>;
 }
