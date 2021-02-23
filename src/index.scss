@@ -42,6 +42,7 @@
   border: 0;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 14px;
 
   &:hover {
     background: darken(#4dd599, 6%);
@@ -50,7 +51,26 @@
   &:active {
     background: darken(#4dd599, 10%);
   }
+
+  &:disabled {
+    background-color: #d8d8d8;
+    
+  }
+
+  &--grey {
+    background: #F4F6F8;
+    color: #9C9C9C;
+
+    &:hover {
+    background: darken(#F4F6F8, 3%);
+    }
+
+    &:active {
+      background: darken(#F4F6F8, 6%);
+      }
+  }
 }
+
 
 .field {
   background: #ffffff;
@@ -59,6 +79,7 @@
   border-radius: 4px;
   padding: 8px 12px;
   width: 100%;
+  font-size: 14px;
 
   &:focus {
     border-color: #dbdbdbdb;

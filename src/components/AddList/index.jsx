@@ -44,6 +44,9 @@ const AddList = ({ colors, onAdd }) => {
         onAdd(listObj);
         onClose();
       })
+      .catch(() => {
+        alert("Ошибка при добавлении списка!")
+    })
       .finally(() => {
         setIsLoading(false);
       });
@@ -92,6 +95,7 @@ const AddList = ({ colors, onAdd }) => {
             alt="close button"
             className="add-list__popup-close-btn"
           />
+
           <input
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
@@ -99,6 +103,7 @@ const AddList = ({ colors, onAdd }) => {
             type="text"
             placeholder="Название списка"
           />
+
           <div className="add-list__popup-colors">
             {colors.map((color) => (
               <Badge
