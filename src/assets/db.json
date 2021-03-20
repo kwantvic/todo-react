@@ -24,6 +24,11 @@
       "name": "Спорт",
       "colorId": 5,
       "id": 5
+    },
+    {
+      "name": "5555",
+      "colorId": 1,
+      "id": 6
     }
   ],
   "tasks": [
@@ -134,6 +139,18 @@
       "text": "jkjkjkjkkjk",
       "completed": false,
       "id": 19
+    },
+    {
+      "listId": 2,
+      "text": "rwerwerwe",
+      "completed": false,
+      "id": 20
+    },
+    {
+      "listId": 3,
+      "text": "asdasdas",
+      "completed": false,
+      "id": 21
     }
   ],
   "colors": [
